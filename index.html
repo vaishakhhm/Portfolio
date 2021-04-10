@@ -1,71 +1,343 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-  <style>
-    body, html {
-        height: 100%;
-        margin: 0;
-    }
-
-    .bg-image {
-        background-image: url('images/comingup.jpg');
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        filter: blur(4px);
-        -webkit-filter: blur(4px);
-    }
-
-    .topleft {
-        position: absolute;
-        top: 0;
-        left: 16px;
-    }
-
-    .bottomleft {
-        position: absolute;
-        bottom: 0;
-        left: 16px;
-    }
-
-    .bg-text {
-        color: white;
-        font-weight: bold;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: 2;
-        padding: 20px;
-        font-family: "Gerogia", serif;
-        font-size: 25px;
-    }
-
-    hr {
-        margin: auto;
-        width: 40%;
-    }
-  </style>
-
+<html class="no-js" lang="en">
 
   <head>
-    <title>Vaishakh's Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vaishakh Menon</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
+
   <body>
-    <div class="bg-image"></div>
-    <div class="bg-text">
-      <h1>Coming Soon</h1>
-      <h2 style="font-size: 25px">Page is under-construction</h2>
-      <hr>
+    <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+      <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>   
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+      <div id="lead-content">
+        <h1>Vaishakh Menon</h1>
+        <h2>Software Engineer</h2>
+        <a href="docs/Resume.pdf" download class="btn-rounded-white">Download Resume</a>
+      </div>
+      <!-- End #lead-content -->
+
+      <div id="lead-overlay"></div>
+
+      <div id="lead-down">
+        <span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </div>
+      <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">About Me</h2>
+          </div>
+          <div class="col-md-8">
+            <p>
+              I am a Software Engineer also a full-stack developer living in Mumbai, India.
+              have experience building system from scratch including front end and back-end.
+              Linux have been used primarily for back-end and Windows for front-end,
+              and also have experience in designing websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #about -->
+    <div id="experience" class="background-alt">
+      <h2 class="heading">Experience</h2>
+      <div id="experience-timeline">
+        <div data-date="August 2013 – Present">
+          <h3> <a href="http://www.capmatrixtechnologies.com/" target="blank">Capmatrix Technologies</a> </h3>
+          <h4>Senior Software Developer</h4>
+          <p>
+            Currently working here as the lead developer, my work here include
+            improving in-house trading application and developing new modules 
+            for the same. The trading application is build primarily 
+            for low latency algorithmic stock trading. 
+          </p>
+        </div>
+
+        <div data-date="May 2011 – Jun 2013">
+          <h3><a href="http://www.aei.ind.in/" target="blank">Applied Electroptics and Instrument</a> </h3>
+          <h4>Junior Engineer</h4>
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+      <h2 class="heading">Education</h2>
+      <div class="education-block">
+        <h3>University of Mumbai</h3>
+        <span class="education-date">Jun 2019 - Present </span>
+        <h4>Bachelor of Science in Information Technology</h4>
+        <p>
+
+        </p>
+      </div>
+      <!-- End .education-block -->
+
+      <div class="education-block">
+        <h3>Maharashtra State Board of Technical Education (MSBTE)</h3>
+        <span class="education-date">Jun 2009 - May 2012</span>
+        <h4>Diploma in Computer Engineering</h4>
+        <p>
+
+        </p>
+      </div>
+      <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+
+    <!-- Proprietary projects -->
+    <div id="projects" class="background-alt">
+      <h2 class="heading">Proprietary projects</h2>
+      <div class="container">
+        <div class="row">
+          <div class="project shadow-large">
+            <!--            <div class="no-image project-image">
+                          <img src="images/project.jpg" />
+                        </div>-->
+            <div class="no-image project-info">
+              <h3>Futures/Options Arbitrage Strategies</h3>
+              <p>
+                Multiple classified strategies which has several parameters to place orders in different
+                exchanges in extremely latency sensitive environment.
+              </p>
+<!--              <a href="https://www.nseindia.com/trade/platform-services-neat-trading-system"
+                 target="blank"> *View Project
+              </a>-->
+            </div>
+          </div>
+
+          <div class="project shadow-large">
+            <!--            <div class="no-image project-image">
+                          <img src="images/project.jpg" />
+                        </div>-->
+            <div class="no-image project-info">
+              <h3>NNF Trimmed protocol implementation of NSE India</h3>
+              <p>
+                NNF(Non-Neat Front End) API Protocol was implemented in the trading system
+                architecture to handle both Manual orders as well as low latency algorithmic orders.
+              </p>
+              <a href="https://www.nseindia.com/trade/platform-services-neat-trading-system"
+                 target="blank"> *View Project
+              </a>
+            </div>
+          </div>
+          
+          <div class="project shadow-large">
+            <!--            <div class="no-image project-image">
+                          <img src="images/project.jpg" />
+                        </div>-->
+            <div class="no-image project-info">
+              <h3>NSE Multicast Tick-By-Tick Protocol Implementation</h3>
+              <p>
+                This projects handles massive amount of UDP packets to generate Order book 
+                of the subscribed tickers for which the data has to be processed.
+                The missed data is either recovered using full recovery or using snapshot mechanism
+                provided by the exchange.
+              </p>
+              <a href="https://www.nseindia.com/trade/platform-services-neat-trading-system"
+                 target="blank"> *View Project
+              </a>
+            </div>
+          </div>
+
+          <div class="project shadow-large">
+            <div class="no-image project-info">
+              <h3>BSE ETI protocol implementation</h3>
+              <p>
+                Replacement of existing IML(Immediate Message Layer) protocol with
+                ETI (Exchange Trading Interface) API Protocol in the trading system
+                architecture to handle both Manual orders as well as low latency algorithmic orders.
+              </p>
+              <a href="https://www.bseindia.com/nta.aspx#!#1"target="blank"> 
+                *View Project
+              </a>
+            </div>
+          </div>
+          
+          <div class="project shadow-large">
+            <div class="no-image project-info">
+              <h3>MCX Non-FIX API implementation</h3>
+              <p>
+                Integrating PreTrade, Trade and PostTrade features of 
+                Multi-Commodity eXchange of India (MCX)
+                as per the latest API provided by the exchange,
+                within the existing framework.
+              </p>
+              <a href="https://www.mcxindia.com/technology/ctcl/computer-to-computer-link-software"target="blank"> 
+                *View Project
+              </a>
+            </div>
+          </div>
+          
+          <div class="project shadow-large">
+            <div class="no-image project-info">
+              <h4>
+                *The links provided are not of the project itself but instead the,
+                underlying company which provided their proprietary API.
+              </h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Personal/open source projects -->
+    <!--    <div id="projects" class="background-alt">
+          <h2 class="heading">Personal/Open Source Projects</h2>
+          <div class="container">
+            <div class="row">
+              <div class="project shadow-large">
+                <div class="project-image">
+                  <img src="images/project.jpg" />
+                </div>
+                 End .project-image 
+                <div class="project-info">
+                  <h3>NNF protocol implementation of NSE India</h3>
+                  <p>
+                    NNF(Non-Neat Front End) API Protocol was implemented in the trading system
+                    architecture to handle both Manual orders as well as low latency (strategy) orders.
+                  </p>
+                </div>
+                 End .project-info 
+              </div>
+               End .project 
+    
+              <div class="project shadow-large">
+                <div class="project-image">
+                  <img src="images/project.jpg" />
+                </div>
+                 End .project-image 
+                <div class="project-info">
+                  <h3>BSE</h3>
+                  <p>
+    
+                  </p>
+                  <a href="#">View Project</a>
+                </div>
+                 End .project-info 
+              </div>
+               End .project 
+            </div>
+          </div>
+        </div>-->
+    <!-- End #projects -->
+
+    <div id="skills">
+      <h2 class="heading">Skills</h2>
+      <ul>
+        <li><a href="https://www.iso.org/standard/74528.html"  target="_blank">C</a></li>
+        <li><a href="https://isocpp.org/"  target="_blank">C++</a></li>
+        <li><a href="https://www.linux.org/"  target="_blank">Linux</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/"  target="_blank">C#</a></li>
+        <li><a href="https://www.javascript.com/"  target="_blank">JavaScript</a></li>
+        <li><a href="https://www.python.org/"  target="_blank">Python</a></li>
+        <li><a href="https://www.java.com/en/"  target="_blank">Java</a></li>
+        <li><a href="https://www.mysql.com/"  target="_blank">MySQL</a></li>
+      </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+      <h2>Get in Touch</h2>
+      <div id="contact-form">
+        <form method="POST" action="mailto:vaishakhhm@gmail.com" enctype="text/plain">
+          <input type="email" name="replyto" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>
+              Copyright &copy; 2021 Vaishakh Menon <br>
+              Thanks to <a href="https://rfitz.io/"> Ryan Fitzgerald </a> 
+              for this amazing template.
+            </p>
+          </div>
+          <div class="col-sm-2 ">
+
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/vaishakhhm" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/710225/questioner" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/vaishakhhm/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Vaishakh_Menon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
